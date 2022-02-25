@@ -1,24 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   one.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: flim <flim@student.42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/25 00:33:48 by flim              #+#    #+#             */
-/*   Updated: 2022/02/26 00:08:39 by flim             ###   ########.fr       */
+/*   Created: 2022/02/25 23:14:34 by flim              #+#    #+#             */
+/*   Updated: 2022/02/26 00:44:28 by flim             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "../includes/ft_printf.h"
 
-#include <stdarg.h>
-#include <unistd.h>
-#include "../libft/libft.h"
+int print_char(va_list args)
+{
+    ft_putchar_fd((char)va_arg(args, int), 1);
+    return (1);
+}
 
-int ft_printf(const char *s, ...);
-int print_char(va_list args);
-int print_str(va_list args);
+int print_str(va_list args)
+{
+    char    *str;
 
-#endif
+    str = va_arg(args, char *);
+    if (!str)
+    {
+        ft_putstr_fd("(null)", 1);
+        return (6);
+    }
+    ft_putstr_fd(str, 1);
+    return (ft_strlen(str));
+}
