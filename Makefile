@@ -6,7 +6,7 @@
 #    By: flim <flim@student.42abudhabi.ae>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/07 15:56:08 by flim              #+#    #+#              #
-#    Updated: 2022/02/26 22:05:56 by flim             ###   ########.fr        #
+#    Updated: 2022/02/27 01:11:20 by flim             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ INCLUDE = includes
 SOURCE = sources
 
 SRCS = $(SOURCE)/ft_printf.c $(SOURCE)/decimal_funcs.c \
-	$(SOURCE)/hex_funcs.c $(SOURCE)/one.c
+	$(SOURCE)/hex_funcs.c $(SOURCE)/char_string_funcs.c
 OBJS = $(SRCS:.c=.o)
 
 TEST = tests/main.c
