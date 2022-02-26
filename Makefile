@@ -6,7 +6,7 @@
 #    By: flim <flim@student.42abudhabi.ae>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/07 15:56:08 by flim              #+#    #+#              #
-#    Updated: 2022/02/26 17:23:04 by flim             ###   ########.fr        #
+#    Updated: 2022/02/26 22:05:56 by flim             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,9 +23,8 @@ RM = rm -rf
 INCLUDE = includes
 SOURCE = sources
 
-SRCS = $(SOURCE)/ft_printf.c \
-	$(SOURCE)/decimal_funcs.c \
-	$(SOURCE)/one.c
+SRCS = $(SOURCE)/ft_printf.c $(SOURCE)/decimal_funcs.c \
+	$(SOURCE)/hex_funcs.c $(SOURCE)/one.c
 OBJS = $(SRCS:.c=.o)
 
 TEST = tests/main.c
@@ -74,6 +73,7 @@ norm:
 test:
 	@echo $(BRIGHT_CYAN)
 	@$(CC) $(CFLAGS) $(TEST) -L. -lftprintf; ./a.out
+	@$(RM) a.out
 	@printf $(RESET)
 
 .PHONY = all clean fclean re test
