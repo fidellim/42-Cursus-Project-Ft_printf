@@ -6,13 +6,13 @@
 /*   By: flim <flim@student.42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/25 00:22:34 by flim              #+#    #+#             */
-/*   Updated: 2022/02/26 22:24:16 by flim             ###   ########.fr       */
+/*   Updated: 2022/02/27 00:31:08 by flim             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
-int	print_conversion(va_list args, const char c)
+static int	print_conversion(va_list args, const char c)
 {
 	int	str_count;
 
@@ -22,7 +22,7 @@ int	print_conversion(va_list args, const char c)
 	else if (c == 's')
 		str_count = print_str(args);
 	else if (c == 'p')
-		str_count = print_int(args);
+		str_count = print_pointer(args);
 	else if (c == 'd' || c == 'i')
 		str_count = print_int(args);
 	else if (c == 'u')
@@ -52,7 +52,8 @@ int	ft_printf(const char *s, ...)
 			ft_putchar_fd(*s, 1);
 			str_count++;
 		}
-		s++;
+		if (*s)
+			s++;
 	}
 	va_end(args);
 	return (str_count);
