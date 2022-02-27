@@ -6,7 +6,7 @@
 #    By: flim <flim@student.42abudhabi.ae>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/07 15:56:08 by flim              #+#    #+#              #
-#    Updated: 2022/02/27 01:11:20 by flim             ###   ########.fr        #
+#    Updated: 2022/02/27 11:10:21 by flim             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,7 +72,7 @@ norm:
 
 test:
 	@echo $(BRIGHT_CYAN)
-	@$(CC) $(CFLAGS) $(TEST) -L. -lftprintf; ./a.out
+	@$(CC) $(CFLAGS) $(TEST) -L. -lftprintf && ./a.out
 	@$(RM) a.out
 	@printf $(RESET)
 
