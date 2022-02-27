@@ -6,7 +6,7 @@
 /*   By: flim <flim@student.42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/25 00:33:48 by flim              #+#    #+#             */
-/*   Updated: 2022/02/27 00:21:57 by flim             ###   ########.fr       */
+/*   Updated: 2022/02/27 11:32:46 by flim             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define FT_PRINTF_H
 
 # include <stdarg.h>
-# include <unistd.h>
 # include "../libft/libft.h"
 
 int	ft_printf(const char *s, ...);
