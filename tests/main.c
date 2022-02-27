@@ -6,7 +6,7 @@
 /*   By: flim <flim@student.42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/24 19:10:56 by flim              #+#    #+#             */
-/*   Updated: 2022/02/27 01:13:02 by flim             ###   ########.fr       */
+/*   Updated: 2022/02/27 11:18:53 by flim             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ int	main(void)
 	real_count = 0;
 	mine_count = 0;
 	printf("\nRANDOM TESTER\n-----------------\n");
+	ft_printf("MINE: lots of arguments : %s\n", "this is for testing", "hi", "hello");
+	//printf("REAL: lots of arguments : %s\n", "this is for testing", "hi", "hello");
 	printf("REAL: Pointer address: %p\n", &name);
 	printf("REAL: Pointer address (using hex): %#lx\n", (unsigned long)&name);
 	printf("-----------------\n");
