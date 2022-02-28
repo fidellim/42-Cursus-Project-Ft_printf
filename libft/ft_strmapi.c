@@ -6,9 +6,10 @@
 /*   By: flim <flim@student.42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/14 17:33:54 by flim              #+#    #+#             */
-/*   Updated: 2022/01/24 19:40:40 by flim             ###   ########.fr       */
+/*   Updated: 2022/02/28 17:23:26 by flim             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))

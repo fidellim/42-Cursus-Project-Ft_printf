@@ -6,9 +6,10 @@
 /*   By: flim <flim@student.42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/14 17:44:42 by flim              #+#    #+#             */
-/*   Updated: 2022/01/17 19:23:52 by flim             ###   ########.fr       */
+/*   Updated: 2022/02/28 17:21:14 by flim             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 t_list	*ft_lstnew(void *content)

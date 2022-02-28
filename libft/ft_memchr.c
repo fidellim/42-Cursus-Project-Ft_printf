@@ -6,9 +6,10 @@
 /*   By: flim <flim@student.42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/05 15:57:30 by flim              #+#    #+#             */
-/*   Updated: 2022/01/15 18:01:06 by flim             ###   ########.fr       */
+/*   Updated: 2022/02/28 17:21:23 by flim             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)

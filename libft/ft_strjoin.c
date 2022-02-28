@@ -6,9 +6,10 @@
 /*   By: flim <flim@student.42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/13 00:31:27 by flim              #+#    #+#             */
-/*   Updated: 2022/01/24 19:37:32 by flim             ###   ########.fr       */
+/*   Updated: 2022/02/28 17:28:27 by flim             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
@@ -27,7 +28,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
 	size = s1_len + s2_len + 1;
-	ptr = (char *) malloc(size * sizeof(char));
+	ptr = (char *)malloc(size * sizeof(char));
 	if (!ptr)
 		return (0);
 	ft_memcpy(ptr, s1, s1_len);

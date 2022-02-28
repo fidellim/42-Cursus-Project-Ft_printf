@@ -6,9 +6,10 @@
 /*   By: flim <flim@student.42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/14 17:37:01 by flim              #+#    #+#             */
-/*   Updated: 2022/01/15 16:46:50 by flim             ###   ########.fr       */
+/*   Updated: 2022/02/28 17:22:04 by flim             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)

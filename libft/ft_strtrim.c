@@ -6,9 +6,10 @@
 /*   By: flim <flim@student.42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/13 17:15:06 by flim              #+#    #+#             */
-/*   Updated: 2022/01/13 19:54:16 by flim             ###   ########.fr       */
+/*   Updated: 2022/02/28 17:23:46 by flim             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set)

@@ -6,9 +6,10 @@
 /*   By: flim <flim@student.42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/14 17:38:22 by flim              #+#    #+#             */
-/*   Updated: 2022/01/15 16:58:09 by flim             ###   ########.fr       */
+/*   Updated: 2022/02/28 17:27:01 by flim             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)
@@ -16,6 +17,6 @@ void	ft_putendl_fd(char *s, int fd)
 	if (!s)
 		return ;
 	while (*s)
-		write (fd, s++, 1);
+		write(fd, s++, 1);
 	write(fd, "\n", 1);
 }
