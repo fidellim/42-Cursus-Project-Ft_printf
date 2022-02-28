@@ -6,7 +6,7 @@
 /*   By: flim <flim@student.42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/05 15:58:28 by flim              #+#    #+#             */
-/*   Updated: 2022/02/28 17:22:17 by flim             ###   ########.fr       */
+/*   Updated: 2022/02/28 17:49:15 by flim             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strdup(const char *s1)
 	char	*cpy;
 
 	len = ft_strlen(s1);
-	cpy = (char *) malloc((len + 1) * sizeof(char));
+	cpy = (char *)malloc((len + 1) * sizeof(char));
 	if (!cpy)
 		return (NULL);
 	while (*s1)

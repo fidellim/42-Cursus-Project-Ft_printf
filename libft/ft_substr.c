@@ -6,7 +6,7 @@
 /*   By: flim <flim@student.42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/13 16:32:02 by flim              #+#    #+#             */
-/*   Updated: 2022/02/28 17:23:54 by flim             ###   ########.fr       */
+/*   Updated: 2022/02/28 17:49:55 by flim             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		len = len_s - start;
 	if (start >= len_s)
 		return (ft_strdup(""));
-	ptr = malloc (sizeof(char) * (len + 1));
+	ptr = malloc(sizeof(char) * (len + 1));
 	if (!ptr)
 		return (0);
 	ft_memcpy(ptr, s + start, len);

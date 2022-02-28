@@ -6,7 +6,7 @@
 /*   By: flim <flim@student.42abudhabi.ae>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/14 17:32:10 by flim              #+#    #+#             */
-/*   Updated: 2022/02/28 17:20:27 by flim             ###   ########.fr       */
+/*   Updated: 2022/02/28 17:49:42 by flim             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ char	*ft_itoa(int n)
 	i = 0;
 	len = n_len(n);
 	len2 = len;
-	result = (char *) malloc(sizeof(char) * (len + 1));
+	result = (char *)malloc(sizeof(char) * (len + 1));
 	if (!result)
 		return (NULL);
 	if (n < 0)
