@@ -25,6 +25,13 @@ The goal of this project is pretty straightforward. You will recode printf(). Yo
 - 100/100 <br>
 <img src="./images/42_ft_printf_score.png" alt="score" width="200"/>
 
+## References
+
+- [Variable Argument Lists](https://www.cprogramming.com/tutorial/c/lesson17.html)
+- [Variadic Function in C](https://www.geeksforgeeks.org/variadic-functions-in-c/)
+- [Flags in Printf](https://www.youtube.com/watch?v=3EgIRo4Hftg)
+- [Printf function in c](https://www.tutorialspoint.com/c_standard_library/c_function_printf.htm)
+
 ## Author
 
 - Website - [Fidel Lim](https://fidellim-portfolio.netlify.app/)
