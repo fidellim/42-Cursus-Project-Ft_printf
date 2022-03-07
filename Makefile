@@ -6,7 +6,7 @@
 #    By: flim <flim@student.42abudhabi.ae>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/07 15:56:08 by flim              #+#    #+#              #
-#    Updated: 2022/02/27 11:10:21 by flim             ###   ########.fr        #
+#    Updated: 2022/03/07 11:14:26 by flim             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,4 +76,4 @@ test:
 	@$(RM) a.out
 	@printf $(RESET)
 
-.PHONY = all clean fclean re test
+.PHONY = all clean fclean re test norm
